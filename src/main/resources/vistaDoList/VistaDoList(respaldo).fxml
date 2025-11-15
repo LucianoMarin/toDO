@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="781.0" prefWidth="409.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.programa.dolist.Controlladores.ControladorPrincipal">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <HBox prefHeight="765.0" prefWidth="409.0">
+         <children>
+            <GridPane alignment="CENTER" prefHeight="335.0" prefWidth="424.0" styleClass="cuerpoPrograma" stylesheets="@../com/programa/dolist/css/estilo.css" HBox.hgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="129.0" prefWidth="22.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.0" prefWidth="21.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="131.0" prefHeight="88.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="571.0" minHeight="484.0" prefHeight="501.0" />
+                  <RowConstraints maxHeight="254.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="254.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="254.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="254.0" minHeight="58.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="99.0" minHeight="15.0" prefHeight="43.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="33.0" minHeight="0.0" prefHeight="0.0" valignment="TOP" />
+              </rowConstraints>
+               <children>
+                  <GridPane styleClass="btnNuevaTarea" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="6" GridPane.vgrow="ALWAYS">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="-Infinity" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="205.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button id="btnNuevaTarea" mnemonicParsing="false" prefHeight="29.0" prefWidth="134.0" stylesheets="@../com/programa/dolist/css/estilo.css" text="AGREGAR" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+                  <Pane minHeight="100.0" minWidth="100.0" prefHeight="49.0" prefWidth="370.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="SOMETIMES" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+                     <children>
+                        <Label layoutX="140.0" layoutY="25.0" styleClass="letraTitulo" text="de">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+                           </font>
+                        </Label>
+                        <Label id="letraTituloTarea" contentDisplay="TOP" layoutX="185.0" layoutY="32.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.59" prefHeight="56.0" prefWidth="136.0" text="Tareas">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Line endX="-22.0" layoutX="301.0" layoutY="62.0" opacity="0.47" startX="-100.0" strokeLineJoin="BEVEL" strokeWidth="5.0">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                        </Line>
+                        <Label layoutX="71.0" layoutY="14.0" styleClass="letraTitulo" text="Lista">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-41.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </Pane>
+                  <VBox prefHeight="200.0" prefWidth="100.0" styleClass="vboxTareas" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <ScrollPane hbarPolicy="NEVER" prefHeight="517.0" prefWidth="369.0" styleClass="vboxTareas" vbarPolicy="NEVER">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="517.0" prefWidth="367.0" styleClass="vboxTareas" stylesheets="@../com/programa/dolist/css/estilo.css">
+                                 <children>
+                                    <VBox id="vboxTareas" prefHeight="526.0" prefWidth="369.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </VBox>
+                  <TextArea prefHeight="51.0" prefWidth="369.0" styleClass="ingresarTarea" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label prefHeight="19.0" prefWidth="71.0" text="TAREA" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Berlin Sans FB Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="233.6" minWidth="10.0" prefWidth="231.1999755859375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.0" minWidth="10.0" prefWidth="62.40002441406253" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="78.40001220703124" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="20.0" minHeight="0.0" prefHeight="17.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="12.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label prefHeight="18.0" prefWidth="69.0" text="Prioridad" textFill="WHITE" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="listadoPrioridad" prefHeight="26.0" prefWidth="126.0" GridPane.columnIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </children>
+</GridPane>

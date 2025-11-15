@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="tarea" minHeight="105.0" minWidth="337.0" prefHeight="105.0" prefWidth="337.0" styleClass="paneTareas" stylesheets="@../com/programa/dolist/css/estilo.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.programa.dolist.Controlladores.ControladorTarea">
+   <children>
+      <GridPane layoutX="28.0" layoutY="8.0" prefHeight="91.0" prefWidth="301.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="292.8000030517578" minWidth="10.0" prefWidth="20.39998779296875" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="324.600015258789" minWidth="10.0" prefWidth="238.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.80003967285157" minWidth="10.0" prefWidth="18.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.80003967285157" minWidth="6.9999847412109375" prefWidth="60.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="24.799995803833006" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="91.19999999999999" minHeight="5.0" prefHeight="5.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="91.19999999999999" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="37.59999389648438" minHeight="0.0" prefHeight="4.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="textoTodo" prefHeight="78.0" prefWidth="232.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="FreeSans" size="12.0" />
+               </font>
+            </Label>
+            <Label id="textoPrioridadBaja" fx:id="textoPrioridad" prefHeight="41.0" prefWidth="48.0" textAlignment="RIGHT" textFill="#e70808" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="29.0" />
+               </font>
+            </Label>
+            <GridPane prefHeight="6.0" prefWidth="34.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="20.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="20.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button id="botonEliminar" fx:id="botonEliminar" maxHeight="24.0" maxWidth="27.0" minHeight="20.0" minWidth="20.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="27.0" text="X" textAlignment="RIGHT" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets top="10.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="10.0" />
+                     </font></Button>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</Pane>

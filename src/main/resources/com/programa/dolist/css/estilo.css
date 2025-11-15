@@ -1,0 +1,137 @@
+.cuerpoPrograma {
+    -fx-background-color: linear-gradient(from 50% 40% to 120% 100%, #2c0a42f9, #0e6297);
+
+}
+
+.ingresarTarea {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #5c5b5b;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI";
+    -fx-border-color: #0b73e2;
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 8px;
+    -fx-padding: 8px;
+}
+
+.fondoPrograma {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #0d5896a4, #696767);
+
+}
+
+.letraTitulo {
+    -fx-text-fill: #f5f5f5;
+
+}
+
+#letraTituloTarea {
+    -fx-font-style: italic;
+    -fx-text-fill: #f5f5f5;
+
+    -fx-text-decoration: underline;
+    -fx-strikethrough: true;
+}
+
+#btnNuevaTarea {
+    -fx-background-color: #7e4d88;
+    -fx-text-fill: #f5f5f5;
+
+}
+
+#btnNuevaTarea:pressed {
+    -fx-background-color: #f5f5f5;
+    -fx-text-fill: #df4c03;
+
+}
+
+
+#vboxTareas {
+    -fx-background-color: linear-gradient(from 20% 20% to 100% 100%, #edf2e8a4, #c9c5c5);
+    -fx-text-fill: #5c5b5b;
+    -fx-font-size: 14px;
+    -fx-font-family: "Segoe UI";
+    -fx-background-radius: 8px;
+    -fx-padding: 10px;
+}
+
+#cuerpoTAREAS{
+  -fx-background-color: linear-gradient(from 20% 20% to 100% 100%, #d3d4d2a4, #c9c5c5);
+    -fx-background-radius: 8px;
+    -fx-padding: 10px;
+
+}
+
+
+#principal {
+    -fx-background-color: #f0f0f0;
+    /* color de fondo general */
+    -fx-text-fill: #333333;
+    /* color del texto */
+    -fx-font-size: 14px;
+    /* tamaño de fuente */
+    -fx-font-family: "Segoe UI";
+    /* tipo de letra */
+    -fx-border-color: #162057;
+    /* color del borde */
+    -fx-border-width: 2px;
+    /* grosor del borde */
+    -fx-border-radius: 8px;
+    /* bordes redondeados */
+    -fx-background-radius: 8px;
+    /* redondeo del fondo */
+    -fx-padding: 8px;
+    /* redondeo del fondo */
+
+}
+
+
+.paneTareas {
+    -fx-background-color: #ffffff;
+    /* color de fondo general */
+    -fx-border-width: 3px;
+    /* grosor del borde */
+    -fx-border-radius: 2px;
+    -fx-background-radius: 2px;
+    -fx-border-color: #c5c5c552;
+
+}
+
+.textoPrioridad {
+
+    -fx-text-fill: #5c5b5b;
+
+}
+
+
+#textoPrioridadBaja {
+
+    -fx-text-fill: #b81313;
+
+}
+
+
+#textoPrioridadMedia {
+    -fx-text-fill: #9ca409;
+
+}
+
+#textoPrioridadBaja {
+    -fx-text-fill: #10d12a;
+
+
+}
+
+#botonEliminar{
+  -fx-background-color: linear-gradient(from 20% 20% to 100% 100%, #d3d4d2a4, #c9c5c5);
+  -fx-text-fill: #303030;
+  -fx-background-radius: 8px;
+
+}
+
+#botonEliminar:pressed{
+  -fx-background-color: linear-gradient(from 20% 20% to 100% 100%, #494747a4, #c9c5c5);
+  -fx-text-fill: #131212;
+  -fx-background-radius: 8px;
+
+}
